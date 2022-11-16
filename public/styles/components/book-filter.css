@@ -1,0 +1,66 @@
+.bug-filter {
+  margin: 20px 60px;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+}
+
+.bug-filter div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bug-filter input {
+  min-width: 60px;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  background: #eaeaea;
+  border: 1px solid #d4d4d4 !important;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 0;
+  width: 80%;
+}
+
+.filter-container button {
+  background-color: #8cb8ffe1;
+  color: rgba(21, 21, 21, 0.612);
+  border: 0;
+  box-shadow: 0px 2px 7px -2px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  transition: 0.07s;
+  position: relative;
+  cursor: pointer;
+  transition:0.3s;
+}
+
+.filter-container{
+  display: flex;
+  justify-content:space-evenly;
+  margin-bottom: 10px;
+}
+
+
+.filter-container a {
+  text-decoration: none;
+  color:inherit;
+  font-size: 24px;
+border-bottom: 1px rgba(57, 57, 57, 0) solid;
+transition: 0.3s;
+}
+.filter-container a:hover {
+  transform: scale(1.1);
+border-bottom: 1px rgba(57, 57, 57, 0.884) solid;
+}
+.filter-container button:hover {
+  transform: scale(1.1);
+}

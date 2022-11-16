@@ -1,0 +1,78 @@
+/* bookAdd */
+.book-add {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-add input {
+  padding: 12px 20px;
+  margin: 8px 0;
+}
+
+.api-books-list {
+  display: flex;
+}
+
+.api-list {
+  list-style: none;
+}
+
+.api-item {
+  margin-top: 10px;
+  margin-inline-start: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.api-item button {
+  display: inline-block;
+}
+
+/* modal */
+.modal,
+.api-books-list,
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.overlay {
+  opacity: 0.5;
+  background-color: black;
+}
+.modal-card {
+  position: relative;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  min-height: 500px;
+  z-index: 10;
+  opacity: 1;
+}
+
+.modal-card button {
+  width: max-content;
+}
+
+.btn-close {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+.modal-card img {
+  width: 200px;
+  height: 200px;
+}

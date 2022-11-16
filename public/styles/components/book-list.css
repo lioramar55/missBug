@@ -1,0 +1,32 @@
+.books-list {
+  display: grid;
+  margin: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-auto-rows: 350px;
+  width: 100%;
+}
+
+.books-list > * {
+  /* height: 100px; */
+  margin: 10px;
+  text-align: center;
+}
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+} */
+
+
+.bugs-table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+.bugs-table td, .bugs-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+

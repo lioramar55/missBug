@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "5bgJu",
+    "nickname": "test",
+    "password": "$2a$10$FxEUmWZa1eiUjFxXMjA5feCzYqO3GIOXd97B7.JLgrBjAfe0h4kkq",
+    "isAdmin": false,
+    "score": 100
+  },
+  {
+    "_id": "cCpHL",
+    "nickname": "lior",
+    "password": "$2a$10$AOx1RFaItNgIHAuZTOtkr.ogf5z/8P6fBQTJBqjfdMC6s07HSjUai",
+    "isAdmin": false,
+    "score": 100
+  }
+]

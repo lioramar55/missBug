@@ -1,0 +1,8 @@
+.bug-actions{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+
+}

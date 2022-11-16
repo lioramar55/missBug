@@ -1,0 +1,10 @@
+.newsletter {
+    padding: 70px 0;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.newsletter .newsletter-title {
+    margin-bottom: 2.66666em;
+    color: var(--clr5);
+}

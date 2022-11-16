@@ -1,0 +1,39 @@
+.about-page {
+  min-height: 80vh;
+  position: relative;
+  background-image: url('/img/back2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.about-content p {
+  width: 50%;
+}
+
+/* animations */
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
