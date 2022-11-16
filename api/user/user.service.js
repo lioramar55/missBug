@@ -7,7 +7,8 @@ const saltRounds = 10
 
 // For user login token
 const Cryptr = require('cryptr')
-const cryptr = new Cryptr('myTotallySecretKey')
+const TOKEN_KEY = process.env.TOKEN_KEY || 'myTotallySecretKey'
+const cryptr = new Cryptr(TOKEN_KEY)
 
 function getLoginToken(user) {
   return cryptr.encrypt(JSON.stringify(user))
@@ -48,10 +49,10 @@ function checkLogin(nickname, password) {
 function signup(nickname, password) {
   const isUserExist = gUsers.find((user) => user.nickname === nickname)
   if (isUserExist) return Promise.reject('Nickname already exists')
+
   return new Promise((resolve, reject) => {
     bcrypt.hash(password, saltRounds, (err, hash) => {
       if (err) reject(err)
-      console.log('hash', hash)
       const user = {
         _id: _makeId(),
         nickname,

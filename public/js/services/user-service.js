@@ -51,7 +51,7 @@ function signup(nickname, password) {
 }
 
 function logout() {
-  return axios.get(base_URL + '/logout').then(() => {
+  return axios.get(base_URL + 'logout').then(() => {
     console.log('logout')
     sessionStorage.removeItem(STORAGE_KEY) // remove the user from the sessionStorage
   })

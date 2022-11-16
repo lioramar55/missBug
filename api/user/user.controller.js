@@ -15,9 +15,8 @@ router.post('/login', (req, res) => {
     .then((user) => {
       const loginToken = userService.getLoginToken(user)
       res.cookie('loginToken', loginToken)
-      res.send(user)
       // req.session.loggedinUser = user
-      // res.send(user)
+      res.send(user)
     })
     .catch((err) => res.status(401).send('Invalid User/Password'))
 })
@@ -30,9 +29,8 @@ router.post('/signup', (req, res) => {
     .then((user) => {
       const loginToken = userService.getLoginToken(user)
       res.cookie('loginToken', loginToken)
+      // req.session.loggedinUser = user
       res.send(user)
-      // req.session.loggedinUser = user // put the created user on the req session
-      // res.send(user)
     })
     .catch((err) => res.status(401).send('User with the same nickname exists'))
 })
@@ -41,7 +39,6 @@ router.post('/signup', (req, res) => {
 router.get('/logout', (req, res) => {
   res.clearCookie('loginToken')
   // req.session.destroy()
-  // console.log('user logout')
   res.end()
 })
 

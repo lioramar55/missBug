@@ -12,5 +12,12 @@
     "password": "$2a$10$AOx1RFaItNgIHAuZTOtkr.ogf5z/8P6fBQTJBqjfdMC6s07HSjUai",
     "isAdmin": false,
     "score": 100
+  },
+  {
+    "_id": "owZ0D",
+    "nickname": "lioramar",
+    "password": "$2a$10$NK9dG56HV4pXnOe4xR0iS./WepksyqJdwXtmIU1fMRHDOEa1ST8R6",
+    "isAdmin": true,
+    "score": 100
   }
 ]

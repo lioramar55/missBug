@@ -52,7 +52,6 @@ function save(bug, user = null) {
 
 function remove(bugId, user) {
   const idx = gBugs.findIndex((bug) => bug._id === bugId)
-  console.log(user)
   if (user.isAdmin || gBugs[idx].creator.nickname === user.nickname) {
     gBugs.splice(idx, 1)
     return _saveBugsToFile().then(() => gBugs)
