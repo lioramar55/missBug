@@ -4,7 +4,7 @@ const session = require('express-session')
 const path = require('path')
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3030
 
 const bugRoutes = require('./api/bug/bug.controller')
 const userRoutes = require('./api/user/user.controller')
